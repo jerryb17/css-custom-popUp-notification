@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #777;
+  height: 100vh;
+}
+
+.title {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+.modal {
+  height: 80vh;
+  background-color: white;
+  width: 900px;
+  max-width: 70%;
+  flex-direction: column;
+  border: 1px solid #777;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  display: flex;
+  padding: 0 1rem;
+  justify-content: space-between;
+  border-bottom: 1px solid #222;
+  padding-bottom: 0.5rem;
+}
+.close-btn {
+  background: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding-top: 0.25rem;
+  margin: 0;
+  border: none;
+  padding-top: 0.7rem;
+  align-self: flex-start;
+}
+
+.body {
+  flex-grow: 1;
+  overflow: auto;
+  padding: 1rem;
+}
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+  border-top: 1px solid #777;
+}
+.footer .btn {
+  margin-right: 0.5rem;
+}
+.footer .btn:last-child {
+  margin-right: initial;
+}
+.btn {
+  padding: 0.5em 1em;
+  border-radius: 0.3em;
+  font-size: inherit;
+}
+.btn-success {
+  background-color: rgb(64, 164, 37);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.btn-success:hover,
+.btn-success:focus {
+  box-shadow: 0 0 5px 0 hsl(100, 90%, 40%);
+  background-color: hsl(100, 90%, 30%);
+}
+.btn-error {
+  background-color: hsl(10, 80%, 50%);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.btn-error:hover,
+.btn-error:focus {
+  box-shadow: 0 0 5px 0 hsl(10, 80%, 50%);
+  background-color: hsl(10, 90%, 40%);
+}
